@@ -1,19 +1,11 @@
-let canvas, ctx, flag = false,
-  prevX = 0,
-  currX = 0,
-  prevY = 0,
-  currY = 0,
-  dot_flag = false;
-
-let x = "black",
-  y = 2;
+let canvas; 
 
 function init() {
   canvas = new fabric.Canvas('can', {
     isDrawingMode: true
   });
   let brush =  canvas.freeDrawingBrush = new fabric.PencilBrush(canvas);
-  brush.width = 5;
+  brush.width = 20;
   w = canvas.width;
   h = canvas.height;
 }
